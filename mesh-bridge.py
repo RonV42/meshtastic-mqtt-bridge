@@ -2,6 +2,7 @@ import paho.mqtt.client as mqtt
 import hashlib
 import time
 import logging
+import sys
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 
@@ -17,14 +18,17 @@ UPSTREAM_TOPIC = "msh/US/IL/Chi/#"
 
 # Watchdog threshold — if no Downstream traffic for this many seconds,
 # force an upstream reconnect. Based on empirical log analysis:
-# longest natural quiet gap in 22,652 events over 46 hours was 2m 15s.
+# longest natural quiet gap in 37,826 events over 3 days was 2m 15s.
 # 600 seconds (10 minutes) provides 7+ minutes of margin above that baseline.
 WATCHDOG_THRESHOLD = 600
+
+# Startup connection retry — if upstream broker is unreachable at startup,
+# retry every STARTUP_RETRY_INTERVAL seconds rather than crashing.
+STARTUP_RETRY_INTERVAL = 30
 
 # Deduplication cache — stores MD5 hashes of recently seen message payloads
 # Capped at 1000 entries (FIFO) to prevent unbounded memory growth
 MAX_CACHE = 1000
-
 seen_messages = []
 last_downstream = time.time()
 
@@ -74,11 +78,15 @@ def on_connect(client, userdata, flags, reason_code, properties):
 def on_disconnect(client, userdata, disconnect_flags, reason_code, properties):
     if reason_code.is_failure:
         logging.warning(f"Unexpected disconnect: {reason_code} ({userdata}) — will reconnect")
+        # Keepalive timeout causes paho to freeze — exit cleanly and let systemd restart
+        if "Keep alive" in str(reason_code):
+            logging.error("Keepalive timeout detected — exiting for clean systemd restart")
+            sys.exit(1)
     else:
         logging.info(f"Clean disconnect: {userdata}")
 
 def watchdog_reconnect():
-    logging.warning(f"Watchdog triggered — forcing upstream reconnect")
+    logging.warning("Watchdog triggered — forcing upstream reconnect")
     # Disconnect cleanly first to clear any zombie handle
     try:
         upstream_client.disconnect()
@@ -90,8 +98,10 @@ def watchdog_reconnect():
         upstream_client.reconnect()
         logging.info("Watchdog reconnect successful")
     except Exception as e:
-        logging.error(f"Watchdog reconnect failed: {e}")
+        logging.error(f"Watchdog reconnect failed: {e} — exiting for clean systemd restart")
+        sys.exit(1)
 
+# Build upstream client
 upstream_client = mqtt.Client(
     callback_api_version=mqtt.CallbackAPIVersion.VERSION2,
     client_id="mesh-bridge-upstream",
@@ -102,8 +112,20 @@ upstream_client.on_connect = on_connect
 upstream_client.on_disconnect = on_disconnect
 upstream_client.on_message = on_upstream_message
 upstream_client.reconnect_delay_set(min_delay=5, max_delay=60)
-upstream_client.connect(UPSTREAM_BROKER, UPSTREAM_PORT, keepalive=60)
 
+# Startup connection retry loop — if upstream broker is unreachable,
+# retry gracefully instead of crashing and letting systemd restart immediately.
+# This avoids a rapid crash loop when the upstream broker is temporarily down.
+while True:
+    try:
+        upstream_client.connect(UPSTREAM_BROKER, UPSTREAM_PORT, keepalive=60)
+        logging.info(f"Initial connection to upstream broker successful")
+        break
+    except Exception as e:
+        logging.warning(f"Upstream broker unreachable: {e} — retrying in {STARTUP_RETRY_INTERVAL}s")
+        time.sleep(STARTUP_RETRY_INTERVAL)
+
+# Build local client
 local_client = mqtt.Client(
     callback_api_version=mqtt.CallbackAPIVersion.VERSION2,
     client_id="mesh-bridge-local",
