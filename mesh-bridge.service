@@ -1,0 +1,15 @@
+[Unit]
+Description=Meshtastic MQTT Bridge
+After=network-online.target mosquitto.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/mesh-bridge/mesh-bridge.py
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
