@@ -30,6 +30,13 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 - **Import Barcode:**
  ![Alt Text](/images/ChiNWburbs.png)
 
+### JustTalk
+- **Purpose:** General talk channel to offload the default LongFast channel, planned for suburb use but everyone is welcome
+- **Modem preset:** JustTalk
+- **Import URL:**
+  https://meshtastic.org/e/?add=true#CjASIIU5Dv5HHGAURGO5dwtiEC1-dpTeQpw-c1sRojlEU-iXGghKdXN0VGFsaygBMAESGAgBGPoBIAsoBTgBQAdIAVAeYAFoAcgGAQ
+- **Import Barcode:**
+ ![Alt Text](/images/JustTalk.png)
 
 
 
