@@ -17,9 +17,10 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 ### PoplarCreek
 - **Purpose:** Channel is for those that enjoy the Poplar Creek Forest Preserve in the NW Suburbs.
 - **Modem preset:** PoplarCreek
-- **Import URL:**  https://meshtastic.org/e/?add=true#CjcSIEAyRZlLz5PpoX9Tk7Xy3Hl7wlrQ3suNfMU0wlEB14pJGgtQb3BsYXJDcmVlaygBMAE6AggNEhgIARj6ASALKAU4AUAHSAFQHmABaAHIBgE
-- **Import:**
-- ![Alt Text](/images/PoplarCreek.png)
+- **Import URL:**
+ https://meshtastic.org/e/?add=true#CjcSIEAyRZlLz5PpoX9Tk7Xy3Hl7wlrQ3suNfMU0wlEB14pJGgtQb3BsYXJDcmVlaygBMAE6AggNEhgIARj6ASALKAU4AUAHSAFQHmABaAHIBgE
+- **Import Barcode:**
+ ![Alt Text](/images/PoplarCreek.png)
 
 <!-- duplicate the block above for each additional private channel -->
 
