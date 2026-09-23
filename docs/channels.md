@@ -22,6 +22,17 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 - **Import Barcode:**
  ![Alt Text](/images/PoplarCreek.png)
 
+### Chicago NW Suburbs
+- **Purpose:** Channel for the NW Suburbs of Chicago.
+- **Modem preset:** ChiNWburbs
+- **Import URL:**
+  https://meshtastic.org/e/?add=true#CjYSIAhrLgLTevl7Xzdspp5-caG6ibGdMJ_R7W9KDutnsyZYGgpDaGlOV2J1cmJzKAEwAToCCA0SGAgBGPoBIAsoBTgBQAdIAVAeYAFoAcgGAQ
+- **Import Barcode:**
+ ![Alt Text](/images/ChiNWburbs.png)
+
+
+
+
 <!-- duplicate the block above for each additional private channel -->
 
 ---
