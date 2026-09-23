@@ -20,7 +20,7 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 - **Import URL:**
  https://meshtastic.org/e/?add=true#CjcSIEAyRZlLz5PpoX9Tk7Xy3Hl7wlrQ3suNfMU0wlEB14pJGgtQb3BsYXJDcmVlaygBMAE6AggNEhgIARj6ASALKAU4AUAHSAFQHmABaAHIBgE
 - **Import Barcode:**
- ![Alt Text](/images/PoplarCreek.png)
+ ![Alt Text](images/PoplarCreek.png)
 
 ### Chicago NW Suburbs
 - **Purpose:** Channel for the NW Suburbs of Chicago.
@@ -28,7 +28,7 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 - **Import URL:**
   https://meshtastic.org/e/?add=true#CjYSIAhrLgLTevl7Xzdspp5-caG6ibGdMJ_R7W9KDutnsyZYGgpDaGlOV2J1cmJzKAEwAToCCA0SGAgBGPoBIAsoBTgBQAdIAVAeYAFoAcgGAQ
 - **Import Barcode:**
- ![Alt Text](/images/ChiNWburbs.png)
+ ![Alt Text](images/ChiNWburbs.png)
 
 ### JustTalk
 - **Purpose:** General talk channel to offload the default LongFast channel, planned for suburb use but everyone is welcome
@@ -36,7 +36,7 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 - **Import URL:**
   https://meshtastic.org/e/?add=true#CjASIIU5Dv5HHGAURGO5dwtiEC1-dpTeQpw-c1sRojlEU-iXGghKdXN0VGFsaygBMAESGAgBGPoBIAsoBTgBQAdIAVAeYAFoAcgGAQ
 - **Import Barcode:**
- ![Alt Text](/images/JustTalk.png)
+ ![Alt Text](images/JustTalk.png)
 
 
 
