@@ -4,7 +4,7 @@ Meshtastic channels covering the Poplar Creek / Route 59 corridor mesh area.
 
 ## How to join
 
-Scan a channel's QR code, or import its URL directly: **Meshtastic app → Settings → Channels → Import**.
+Scan a channel's QR code, or import its URL directly: **Meshtastic app → Channels → Import**.
 
 ## Channels
 
