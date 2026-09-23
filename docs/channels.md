@@ -16,7 +16,7 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 
 ### PoplarCreek
 - **Purpose:** Channel is for those that enjoy the Poplar Creek Forest Preserve in the NW Suburbs.
-- **Modem preset:** PoplarCreek
+- **Channel Name:** PoplarCreek
 - **Import URL:**
  https://meshtastic.org/e/?add=true#CjcSIEAyRZlLz5PpoX9Tk7Xy3Hl7wlrQ3suNfMU0wlEB14pJGgtQb3BsYXJDcmVlaygBMAE6AggNEhgIARj6ASALKAU4AUAHSAFQHmABaAHIBgE
 - **Import Barcode:**
@@ -24,7 +24,7 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 
 ### Chicago NW Suburbs
 - **Purpose:** Channel for the NW Suburbs of Chicago.
-- **Modem preset:** ChiNWburbs
+- **Channel Name:** ChiNWburbs
 - **Import URL:**
   https://meshtastic.org/e/?add=true#CjYSIAhrLgLTevl7Xzdspp5-caG6ibGdMJ_R7W9KDutnsyZYGgpDaGlOV2J1cmJzKAEwAToCCA0SGAgBGPoBIAsoBTgBQAdIAVAeYAFoAcgGAQ
 - **Import Barcode:**
@@ -32,7 +32,7 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Setti
 
 ### JustTalk
 - **Purpose:** General talk channel to offload the default LongFast channel, planned for suburb use but everyone is welcome
-- **Modem preset:** JustTalk
+- **Channel Name:** JustTalk
 - **Import URL:**
   https://meshtastic.org/e/?add=true#CjASIIU5Dv5HHGAURGO5dwtiEC1-dpTeQpw-c1sRojlEU-iXGghKdXN0VGFsaygBMAESGAgBGPoBIAsoBTgBQAdIAVAeYAFoAcgGAQ
 - **Import Barcode:**
