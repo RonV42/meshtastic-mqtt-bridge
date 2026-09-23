@@ -1,7 +1,7 @@
 # Building a Local Meshtastic MQTT Bridge
 ## A Practical Recipe for Neighborhood Mesh Resilience
 
-### Who This Is For
+### Who This Is For (Note this was a premliminary research document real instructions are in the readme.md document in this github repository)
 
 This guide is for Meshtastic users who want their local mesh to receive downlink traffic from a community MQTT broker like Chicagoland Mesh. It assumes you have a working Meshtastic mesh, a home server or small computer running Linux, and either a Starlink connection or reliable local internet.
 
