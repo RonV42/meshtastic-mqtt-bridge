@@ -1,6 +1,8 @@
 # NW Suburbs Channel Lineup
 
-Meshtastic channels covering the Poplar Creek / Route 59 corridor mesh area.
+Meshtastic channels covering the Poplar Creek / Route 59 corridor mesh area. I have been attemping to help the folks in the suburbs to connected our fragmented mesh back to the Chicago Mesh network. 
+
+In addtion to the information here for the suburubs you can head over to https://chicagolandmesh.org/
 
 ## How to join
 
