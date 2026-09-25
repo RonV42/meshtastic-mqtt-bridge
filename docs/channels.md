@@ -46,4 +46,4 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Chann
 
 ---
 
-*Maintained by [RonV42](https://github.com/RonV42). Questions: DM the mesh bot, or open an issue on this repo.*
+*Maintained by [RonV42](https://github.com/RonV42). Questions: DM in Discord.*
