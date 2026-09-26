@@ -1,5 +1,7 @@
 # How the Mesh Bot Works
 
+**Forgot a command? Send cmd by itself. That's the only thing worth memorizing on this page, it returns the full current list on demand.**
+
 This node runs [Meshing-Around](https://github.com/SpudGunMan/meshing-around), a bot that answers commands sent over the mesh. This page covers what it actually does, not the full feature list of the underlying project, most of which is turned off here on purpose.
 
 ## Talking to the bot
