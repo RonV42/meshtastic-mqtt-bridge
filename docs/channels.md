@@ -4,6 +4,8 @@ Meshtastic channels covering the Poplar Creek / Route 59 corridor mesh area. I h
 
 In addtion to the information here for the suburubs you can head over to https://chicagolandmesh.org/
 
+To learn about the bot that monitors the channels you can look at this document:  [bot-guide](https://github.com/RonV42/meshtastic-mqtt-bridge/blob/main/docs/bot-guide.md)
+
 ## How to join
 
 Scan a channel's QR code, or import its URL directly: **Meshtastic app → Channels → Import**.
