@@ -2,6 +2,8 @@
 
 Meshtastic channels covering the Poplar Creek / Route 59 corridor mesh area. I have been attemping to help the folks in the suburbs to connected our fragmented mesh back to the Chicago Mesh network. 
 
+**Note:** Chicago Mesh says to keep the hop count to 3 but out here in the suburbs with the low density of nodes I am recommending 5 to 7 for the hop count on your radios.
+
 In addtion to the information here for the suburubs you can head over to https://chicagolandmesh.org/
 
 To learn about the bot that monitors the channels you can look at this document:  [bot-guide](https://github.com/RonV42/meshtastic-mqtt-bridge/blob/main/docs/bot-guide.md)
