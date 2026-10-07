@@ -6,7 +6,7 @@ It is not a request to change the city rules. The city profile is the right prof
 
 ## Two geometries, one firmware
 
-Chicagoland Mesh in the city is a dense, overlapping network. A lot of the operators keeping it that way came up on ham practice: one band plan, one hop budget, one role model, so a stranger's node does not surprise the network. In that environment a default hop limit of 3, and a zero-hop policy on the shared MQTT broker, is rational. Extra hops do not buy coverage. They multiply copies of traffic that already has several ways to arrive. Uniformity is how a shared public channel stays usable.
+Chicagoland Mesh in the city is a dense, overlapping network. A lot of the operators keeping it that way came up on experiance: one band plan, one hop budget, one role model, so a stranger's node does not surprise the network. In that environment a default hop limit of 3, and a zero-hop policy on the shared MQTT broker, is rational. Extra hops do not buy coverage. They multiply copies of traffic that already has several ways to arrive. Uniformity is how a shared public channel stays usable.
 
 The NW suburbs are a chain, not that mesh. Poplar Creek, a high point on Shoe Factory Road, Streamwood, Bartlett, Hanover Park, then the gap along Route 59 toward Naperville. Miles of low node density sit between those points. A packet that is fine under city rules dies there because each infrastructure hop spends one count, and 3 is gone before Hanover Park.
 
