@@ -23,7 +23,7 @@ These are shared with the city mesh on purpose.
 - LongFast remains the public default channel, with the default PSK. It is how the two regions recognize each other, and it is why hop limit cannot be split by region inside one radio.
 - The city broker keeps its zero-hop policy. This network does not ask for that to change. Downlink into the suburbs terminates on the local broker, as it does today.
 - Bot traffic stays off the public channel. Replies are direct messages, on private local channels only. See the bot guide.
-- Roles stay boring. The M7 is a gateway, not a router-role node. The relay role is already gone from firmware and is not part of this plan.
+- The M7 is a gateway, not a router-role node. The relay role is already gone from firmware and is not part of this plan.
 
 ## What differs, and why
 
