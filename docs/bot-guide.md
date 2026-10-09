@@ -6,7 +6,12 @@ This node runs [Meshing-Around](https://github.com/SpudGunMan/meshing-around), a
 
 ## Talking to the bot
 
-Replies come back as a direct message, never posted to the channel you sent from. That's deliberate, this mesh runs on a public LongFast channel shared with the local ham community, and the bot stays out of that channel's own traffic.  In order for this to work you need to have the **411** Node in your Nodes list. You can wait for the node to show up or scan the barcode below or use the link to add to your Meshtastic app.
+Replies come back as a direct message, never posted to the channel you sent from. That's deliberate, this mesh runs on a public LongFast channel shared with the local ham community, and the bot stays out of that channel's own traffic.  In order for this to work you need to have the **411 Node** in your Nodes list. You can wait for the node to show up or scan the barcode below or use the link to add to your Meshtastic app.
+
+[411 Node Link](https://meshtastic.org/v/#CODnx48KEmEKCSFhMWYxZjNlMBIeNDExIEluZm9ybWF0aW9uIChDaGlNZXNoLm9yZykgGgM0MTEiBuByofHz4CiBATgBQiBmqmNPhUsob0sxdFubCC9-w8aOgkivhfAuVBThrp0qeEgA)
+
+
+
 
 Commands have to be the first word of the message, not buried inside a sentence. Send cmd by itself to get the current list.
 
