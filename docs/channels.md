@@ -44,7 +44,13 @@ Scan a channel's QR code, or import its URL directly: **Meshtastic app → Chann
 - **Import Barcode:**
  ![Alt Text](images/JustTalk.png)
 
-
+### Chicago Sports
+- **Purpose:** Chicago Sports Channel
+- **Channel Name:** ChiSports
+- **Import URL:**
+  https://meshtastic.org/e/?add=true#CjESIKkCV_TrlkIFAnKFviyQ90Qa4Eek1PwxwDR4xJC6_uCEGglDaGlTcG9ydHMoATABEhgIARj6ASALKAU4AUAHSAFQHmABaAHIBgE
+- **Import Barcode:**
+ ![Alt Text](images/ChiSports.png)
 
 <!-- duplicate the block above for each additional private channel -->
 
